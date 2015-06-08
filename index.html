@@ -8,7 +8,11 @@
     <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/style.css">
 
+    <script src="/node_modules/angular/angular.js"></script>
     <script src="/out/curious-hagoth.js"></script>
 </head>
-<body></body>
+
+<body ng-app="Hagoth" ng-controller="IndexCtrl as game">
+    <ng-include src="game.screen.url"></ng-include>
+</body>
 </html>
