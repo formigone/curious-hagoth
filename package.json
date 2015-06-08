@@ -1,0 +1,21 @@
+{
+  "name": "curious-hagoth",
+  "version": "0.0.0",
+  "description": "> And it came to pass that Hagoth, he being an exceedingly curious man, therefore he went forth and built him an exceedingly large ship, (...) and launched it forth into the west sea. (...) And it came to pass that they were never heard of more. *Alma 63:5,8*",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/formigone/curious-hagoth.git"
+  },
+  "author": "Rodrigo Silveira",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/formigone/curious-hagoth/issues"
+  },
+  "dependencies": {
+    "angular": "~1.3.16"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "curious-hagoth",
+  "version": "0.0.0",
+  "homepage": "https://github.com/formigone/curious-hagoth",
+  "authors": [
+    "Rodrigo Silveira <rsilveira@deseretdigital.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.4"
+  }
+}
