@@ -6,7 +6,6 @@
 
 There are two npm commands to use in development:
 
- + ```npm start``` uses watchify to generate an unpacked bundle
- + ```npm run-script build``` runs the app through uglify
+ + ```npm start``` runs webpack and watches the project
+ + ```npm run-script build``` runs webpack in production mode (uglify + source map)
  
-During development, you can run the unpacked version of the app at ```/index.dev.html```. The version of the app running in ```/index.html``` has been uglified, and is bundled with angular.js.
