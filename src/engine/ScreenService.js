@@ -1,5 +1,3 @@
-var angular = require('angular');
-
 /**
  * @param {Object} $q
  * @param {Object} $http
@@ -11,9 +9,6 @@ function ScreenService($q, $http) {
 }
 
 ScreenService.prototype = {
-    loadConfig: function(url){
-        return this.$http.get(url);
-    }
 };
 
 module.exports = ScreenService;

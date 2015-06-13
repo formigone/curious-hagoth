@@ -1,0 +1,41 @@
+.chPrimaryColor {
+    color: #2b542c;
+}
+
+.chPrimaryColorBg {
+    background: #2b542c;
+}
+
+.chPrimaryColorHoverBg {
+    background: #008012;
+}
+
+.chBtn {
+    border: 0;
+    font-family: 'Amatic SC', cursive;
+}
+
+.chBtnPrimary {
+    background: #2b542c;
+    color: #fff;
+}
+
+.chBtnPrimary:hover, .chBtnPrimary:focus {
+    background: #008012;
+}
+
+.chBtnLg {
+    border-radius: 5px;
+    font-size: 85px;
+    padding: 15px 75px;
+}
+
+.chAutoCenter {
+    display: block;
+    margin: 0 auto;
+}
+
+.chTitle {
+    font-size: 5em;
+    text-shadow: 0 5px 0 #fff, 0 7px 0 #000, 0 0.5em 1em #555;
+}

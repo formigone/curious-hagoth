@@ -1,3 +1,6 @@
-<div ng-controller="TitleScreenCtrl as screen">
-    <h1 ng-bind="::screen.title"></h1>
+<div ng-controller="TitleScreenCtrl as screen" class="container-fluid">
+    <div class="row">
+        <h1 class="chTitle sigmar text-center" ng-bind="::screen.title"></h1>
+        <button class="chBtn chBtnLg chBtnPrimary chAutoCenter chPrimaryColorBg" ng-click="screen.onStart()">Start</button>
+    </div>
 </div>

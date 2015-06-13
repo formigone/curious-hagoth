@@ -1,5 +1,15 @@
 {
   "name": "Curious Hagoth #1",
   "version": "1.0.0",
-  "author": "Rodrigo Silveira"
+  "author": "Rodrigo Silveira",
+  "data": {
+    "teams": [],
+    "screens": [
+      {
+        "name": "Title Screen",
+        "src": "/screen/title/main.html"
+      }
+    ],
+    "activeScreenId": 0
+  }
 }

@@ -1,12 +1,14 @@
-var angular = require('angular');
-
 /**
  *
+ * @param {EventBusLoaderService} EventBus
  * @param {LoaderService} LoaderService
  * @constructor
  */
-function EngineCtrl(LoaderService) {
+function EngineCtrl(EventBus, LoaderService) {
+    this.EventBus = EventBus;
     this.LoaderService = LoaderService;
+
+    this.config = this.config || null;
 
     this.teams = [];
     this.scoreboard = [];
@@ -30,7 +32,19 @@ EngineCtrl.prototype = {
     onSwitchScreen: function (screenName) {
     },
     init: function(){
-        this.LoaderService.get('test');
+        if (typeof this.config !== 'string'){
+            throw new Error('No config supplied');
+        }
+
+        this.EventBus.on('startGame', function(){
+            window.alert('Ready... play!!');
+        });
+
+        this.LoaderService.get(this.config).then(function(config){
+            this.teams = config.data.teams;
+            this.screens = config.data.screens;
+            this.activeScreen = config.data.screens[config.data.activeScreenId];
+        }.bind(this));
     }
 };
 

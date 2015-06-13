@@ -1,5 +1,3 @@
-var angular = require('angular');
-
 /**
  * @param {Object} $q
  * @param {Object} $http
@@ -12,7 +10,13 @@ function LoaderService($q, $http) {
 
 LoaderService.prototype = {
     get: function(url){
-        return this.$http.get(url);
+        var def = this.$q.defer();
+
+        this.$http.get(url).then(function(res){
+            def.resolve(res.data);
+        });
+
+        return def.promise;
     }
 };
 

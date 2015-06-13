@@ -1,5 +1,3 @@
-var angular = require('angular');
-
 /**
  *
  * @constructor
@@ -12,7 +10,7 @@ function GameDirective() {
         },
         templateUrl: '/screen/engine/game-directive.html',
         controller: require('./EngineCtrl'),
-        controllerAs: 'engine',
+        controllerAs: 'game',
         bindToController: true
     };
 }

@@ -1,0 +1,6 @@
+## Content Container: <body>
+
+	ch-game.elem =
+		element ch-game { ch-game.attrs }
+	ch-game.attrs =
+		ch-game.attrs.config?
