@@ -1,3 +1,5 @@
+var angular = require('angular');
+
 /**
  *
  * @param {EventBusLoaderService} EventBus
@@ -36,9 +38,13 @@ EngineCtrl.prototype = {
             throw new Error('No config supplied');
         }
 
-        this.EventBus.on('startGame', function(){
-            window.alert('Ready... play!!');
-        });
+        this.EventBus.on('startGame', angular.bind(this, function(){
+//            window.alert('Ready... play!!');
+this.activeScreen = {
+  name: 'Test Screen',
+  src: '/screen/test/testScreen.html'
+};
+        }));
 
         this.LoaderService.get(this.config).then(function(config){
             this.teams = config.data.teams;
